@@ -67,7 +67,7 @@ export default function Pesquisa() {
         }}
       />
       {livrosPesquisados.map(livro => (
-        <Resultado key={livro.id}>
+        <Resultado key={livro}>
           <p>{livro.nome}</p>
           <img src={livro.src} alt="livro" />
         </Resultado>
