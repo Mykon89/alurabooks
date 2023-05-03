@@ -22,8 +22,8 @@ const textoOpcoes = ['CATEGORIAS', 'FAVORITOS', 'ESTANTE'];
 export default function OpcoesHeader() {
   return (
     <Opcoes>
-      {textoOpcoes.map(texto => (
-        <Link key={texto} to={`/${texto.toLowerCase()}`}>
+      {textoOpcoes.map((texto, index) => (
+        <Link key={index} to={`/${texto.toLowerCase()}`}>
           <Opcao>
             <p>{texto}</p>
           </Opcao>

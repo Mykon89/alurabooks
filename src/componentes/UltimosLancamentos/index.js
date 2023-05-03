@@ -26,8 +26,8 @@ export default function UltimosLancamentos() {
         Últimos Lançamentos
       </Titulo>
       <NovosLivrosContainer>
-        {livros.map(livro => (
-          <img key={livro.id} src={livro.src} alt="livro" />
+        {livros.map((livro, index) => (
+          <img key={index} src={livro.src} alt="livro" />
         ))}
       </NovosLivrosContainer>
       <CardRecomenda

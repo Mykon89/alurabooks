@@ -17,8 +17,8 @@ const icones = [perfil, sacola];
 export default function IconesHeader() {
   return (
     <Icones>
-      {icones.map(icone => (
-        <Icone key={icone}>
+      {icones.map((icone, index) => (
+        <Icone key={index}>
           <img src={icone} alt="alt" />
         </Icone>
       ))}
